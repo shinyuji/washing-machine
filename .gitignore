@@ -1,0 +1,24 @@
+# Build outputs
+Debug/
+Release/
+build/
+*.o
+*.d
+*.elf
+*.hex
+*.eep
+*.lss
+*.map
+*.srec
+*.bin
+__dump*.txt
+
+# IDE
+.vs/
+*.atsuo
+*.user
+*.autosave
+
+# OS
+Thumbs.db
+.DS_Store
