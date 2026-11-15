@@ -2,8 +2,10 @@
  * fnd.h
  *
  * Created: 2026-06-12 오전 10:46:00
- *  Author: kccistc
- */ 
+ */
+
+#ifndef FND_H_
+#define FND_H_
 
 #include "common.h"
 
@@ -16,3 +18,8 @@
 #define FND_DIGIT_D2 5
 #define FND_DIGIT_D3 6
 #define FND_DIGIT_D4 7
+
+void init_fnd(void);
+void fnd_display(WASHING_MACHINE *machine);
+
+#endif /* FND_H_ */

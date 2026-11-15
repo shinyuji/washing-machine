@@ -70,4 +70,3 @@ avr-gcc -mmcu=atmega128a -Os -I src -o washing.elf src/*.c
 ## 개발 메모
 
 - 보드 동작 확인한 최종 버전(ver5). 이전 버전(ver2~ver4)은 미포함
-- 헤더 함수 선언 누락으로 `implicit declaration` 경고 발생. 동작 영향 없음, 단 GCC 14 이상에서는 오류 처리되므로 헤더 선언 필요

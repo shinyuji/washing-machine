@@ -1,14 +1,9 @@
 ﻿/*
- * led.c - 03.TIMER_CONTROL
+ * led.c
  *
  * Created: 2026-06-15 오전 11:36:40
- *  Author: user
- */ 
-#include "common.h"
+ */
 #include "led.h"
-
-void init_led(void);
-void set_led(WASHING_MACHINE* machine);
 
 //초기화 함수
 void init_led(void)
@@ -17,7 +12,7 @@ void init_led(void)
 	PORTA=0x00;  // PORTA에 물려있는 led를 all off
 }
 
-void set_led(WASHING_MACHINE* machine)
+void set_led(WASHING_MACHINE *machine)
 {
 	//동작 모드면
 	if(machine->mode == MODE_WORKING){
@@ -39,4 +34,3 @@ void set_led(WASHING_MACHINE* machine)
 		}
 	} else PORTA = 0x00;
 }
-
